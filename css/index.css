@@ -1,0 +1,11 @@
+body {
+    margin: 0%;
+}
+
+.header {
+    position:absolute;
+    overflow:hidden;
+    background-color: palegreen;
+    padding: 20px 10px;
+    width:100%;
+}
