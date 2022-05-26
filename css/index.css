@@ -1,11 +1,161 @@
-body {
+* {
     margin: 0%;
+    padding: 0%;
+    overflow: hidden;
 }
 
-.header {
-    position:absolute;
-    overflow:hidden;
-    background-color: palegreen;
-    padding: 20px 10px;
-    width:100%;
+body {
+    background-color: #e5e5f7;
+    
+    background-image: radial-gradient(#070707 0.5px, #e0e0e0 0.5px);
+    background-size: 10px 10px;
 }
+
+header {
+    
+    overflow:hidden;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    background-color:green;
+    opacity:70%;
+    padding:2% 0 2%;
+    margin: 0%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+
+    
+    
+    /* background: linear-gradient(90deg, #9ebd13 0%, #008552 100%); */
+
+}
+
+.intro {
+    background-color: white;
+    border:solid 1px  black;
+    border-radius: 8px;
+    margin:10% auto;
+    width: 50%;
+    border: 10 10;
+    padding: 5%;
+}
+
+button:hover {
+    border:solid 2px white;
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.med-links {
+    display: none;
+    
+}
+
+.mobile-links button {
+    color: white;
+    background-color:green;
+    border-radius: 5px;
+    min-height:50px;
+    margin:3%;
+    padding:2%;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    background-color:green;
+    width:100%;
+    overflow:hidden;
+    /* height:5%; */
+    
+    
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.footer-div {
+    /* display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    text-align:center; */
+    padding: 1%;
+}
+
+
+
+i {
+    color:white;
+    font-size: 25px;
+    font-family: fontawesome;
+    letter-spacing: 20px;
+    
+}
+
+@media (min-width: 600px) {
+    
+    header {
+        display:flex;
+        flex-grow: 3;
+        justify-content:end;
+    }
+
+    .mobile-logo {
+        display:none;
+    }
+    
+    .mobile-links{
+        display:none;
+        width:100%;
+    }
+
+    .med-links {
+        display:block;
+        padding:0% 10%;
+        
+        
+    }
+    
+    #middlelink {
+        border-left:solid 1px black;
+        border-right:solid 1px black;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    div.med-body {
+        
+        display: flexbox;
+        padding-left: 5%;
+        
+        align-content: space-around;
+    }
+
+    card.cards {
+        background-color: darkblue;
+        
+        
+        
+        border:solid 3px black;
+        width:50%;
+
+    }
+
+    .intro {
+        display: none;
+    }
+    
+}
+

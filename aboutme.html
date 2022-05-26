@@ -20,9 +20,9 @@
             )
         }
 
-        function AboutMe() {
+        function Home() {
             window.open(
-                "/aboutme.html","_self"
+                "/index.html","_self"
             )
         }
 
@@ -31,36 +31,23 @@
 </head>
 <body>
     <header class="header">
-        <!-- content changes according to viewport size --> 
         <a class="mobile-logo">Michael McAdow: Web Developer</a>
         <div class="med-links">
-            <a onclick="AboutMe()">About Me</a>
+            <a onclick="Home()">About Me</a>
             <a id="middlelink">Projects</a>
             <a>Contact</a>
+
         </div>
     </header>
         
-    <div class="">
-        <a class="about">Hello and welcome to my homepage! My name is Michael McAdow and I am a Web Developer. </a>
-    </div>
-
-    <div class="med-body">
-        <card class="cards">
-
-        </card>
-        <card class="cards">
-
-        </card>
-        <card class="cards">
-
-        </card>
+    <div class="intro">
+        <a class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, explicabo nemo. Eveniet commodi quisquam dicta iste excepturi nulla at illum doloremque in temporibus ad officia, fugiat, laudantium tempora quam harum?</a>
     </div>
 
     <div class="mobile-links">
-        <button onclick="AboutMe()">About Me</button>
+        <button onclick="Home()">Back to Home</button>
         <button>Projects</button>
         <button>Contact</button>
-
     </div>
 
     <footer class="footer">
