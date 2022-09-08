@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
+        function Mail() {
+            window.open(
+                "mailto:michaelmcadow@gmail.com"
+            )
+        }
+        
         function LinkedIn() {
             window.open(
                 "https://www.linkedin.com/in/mmcadow"
@@ -30,46 +36,55 @@
     </script>
 </head>
 <body>
-    <header class="header">
+    <header>
         <!-- content changes according to viewport size --> 
-        <a class="mobile-logo">Michael McAdow: Web Developer</a>
-        <div class="med-links">
-            <a onclick="AboutMe()">About Me</a>
-            <a id="middlelink">Projects</a>
-            <a>Contact</a>
-        </div>
+        <a class="mobile-logo" id="header-line1">Michael McAdow</a>
+        <a class="mobile-logo" id="header-line2">&lt; &gt;Web Developer&lt;/&gt;</a>
+        <ul class="med-links">
+            <li onclick="AboutMe()">About Me</li>
+            <li id="middlelink">Projects</li>
+            <li>Contact</li>
+        </ul>
     </header>
         
-    <div class="">
-        <a class="about">Hello and welcome to my homepage! My name is Michael McAdow and I am a Web Developer. </a>
+    <div class="about">
+        <a>Hello and welcome to my homepage! My name is Michael McAdow and I am passionate about being a Web Developer. By utlizing skills such as HTML/CSS, Javascript and more, I hope to make the internet a more welcoming place for everyone. </a>
     </div>
 
+    
+    
     <div class="med-body">
-        <card class="cards">
+        <card class="cards" id="card1">
+            <a>Welcome to the P</a>
+        </card>
+        <card class="cards" id="card2">
+            <a>&lt;a&gt;html&lt;/a&gt;</a>
+            <a>css {}</a>
+        </card>
+        <card class="cards" id="card3">
 
         </card>
-        <card class="cards">
-
-        </card>
-        <card class="cards">
+        <card class="cards" id="card4">
 
         </card>
     </div>
+    
 
     <div class="mobile-links">
         <button onclick="AboutMe()">About Me</button>
         <button>Projects</button>
         <button>Contact</button>
-
     </div>
-
-    <footer class="footer">
+    
+    <footer>
         <div class="footer-div">
             
+            <i onclick="Mail()" class="fab fa-envelope"></i>
             <i onclick="LinkedIn()" class="fab fa-linkedin"></i>
             <i onclick="GitHub()" class="fab fa-github"></i>
         </div>
     </footer>
+    
     
 </body>
 </html>
