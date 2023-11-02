@@ -1,17 +1,15 @@
 * {
-    
-    margin: 0% auto;
-    padding: 0%;
-    overflow: hidden;
+    box-sizing: border-box;
+   
 }
 
 body {
-    
+
     position:relative;
     display:block;
     /* flex-direction: column; */
     
-    background-color: #38c138;
+    background-color: #ebf1eb;
     
     overflow: hidden;
     
